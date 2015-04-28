@@ -45,5 +45,12 @@ return [
     'news_feeds' => array(
         'flat' => 'flat',
         'aggregated' => 'aggregated',
-    )
+    ),
+    /*
+    |-----------------------------------------------------------------------------
+    | The options to set on the Guzzle client
+    |-----------------------------------------------------------------------------
+    |
+    */
+    'guzzle_client_options' => [],
 ];

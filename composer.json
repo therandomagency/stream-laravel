@@ -10,11 +10,17 @@
             "email": "tbarbugli@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/therandomagency/stream-php"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": ">=4.2",
         "illuminate/database": ">=4.2",
-        "get-stream/stream": "~2.1"
+        "get-stream/stream": "dev-http-client-options"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",

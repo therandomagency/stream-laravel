@@ -16,6 +16,10 @@ class StreamLaravelManager {
             $this->client = new Client($api_key, $api_secret);
             $location = $this->config->get("stream-laravel::location");
             $this->client->setLocation($location);
+            $clientOptions = $this->config->get("stream-laravel::guzzle_client_options");
+            foreach ($clientOptions as $option => $value) {
+                $this->client->setGuzzleDefaultOption($option, $value);
+            }
         }
         $this->userFeed = $this->config->get("stream-laravel::user_feed");
     }
